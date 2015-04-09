@@ -17,6 +17,6 @@ import uk.ac.sanger.mig.aker.labware.domain.Type;
 public interface TypeRepository extends PagingAndSortingRepository<Type, Long> {
 
 	@RestResource(path = "by-name", rel = "by-name")
-	public Type findByName(@Param("name") String name);
+	Type findByName(@Param("name") String name);
 	
 }

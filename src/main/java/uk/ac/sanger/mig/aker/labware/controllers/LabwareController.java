@@ -1,7 +1,6 @@
 package uk.ac.sanger.mig.aker.labware.controllers;
 
-import javax.annotation.Resource;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +19,7 @@ import uk.ac.sanger.mig.aker.labware.services.LabwareService;
 @RequestMapping("/labware")
 public class LabwareController {
 
-	@Resource
+	@Autowired
 	private LabwareService labwareService;
 
 	@RequestMapping(value = "/create", method = RequestMethod.POST)

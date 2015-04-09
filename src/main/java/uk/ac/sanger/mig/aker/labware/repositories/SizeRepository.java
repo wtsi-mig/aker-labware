@@ -17,6 +17,6 @@ import uk.ac.sanger.mig.aker.labware.domain.Size;
 public interface SizeRepository extends PagingAndSortingRepository<Size, Long> {
 
 	@RestResource(exported = false)
-	public Size findByName(@Param("name") String name);
+	Size findByName(@Param("name") String name);
 
 }
